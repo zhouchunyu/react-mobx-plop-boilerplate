@@ -1,0 +1,41 @@
+import React, { Component } from 'react'
+import { inject, observer } from 'mobx-react'
+import { Match, Link } from 'react-router-dom'
+
+import Protected from '../Protected'
+import DataWrapper from '../DataWrapper'
+
+import { Table } from 'antd'
+
+@Protected @DataWrapper @inject("store") @observer
+export default class Subpage extends Component {
+	constructor(props) {
+		super(props)
+		this.store = this.props.store
+	}
+	render() {
+        const columns = [
+        {{#each attrs}}
+        {
+          title: '{{name}}',
+          dataIndex: '{{name}}',
+          key: '{{name}}',
+        },
+        {{/each}}
+        {
+          title: 'Action',
+          key: 'action',
+          render: () => (
+            <span>
+              <a href="#">Delete</a>
+              <span className="ant-divider" />
+              <a href="#">Update</a>
+            </span>
+          ),
+        }
+        ];
+		return (
+			<Table dataSource={this.store.items} columns={columns} />
+		)
+	}
+}

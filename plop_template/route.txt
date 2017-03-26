@@ -1,0 +1,6 @@
+<Route
+                          exact
+                          path='/{{snakeCase resource}}'
+                          render={(props) => <LazyRoute {...props} component={import('./{{snakeCase resource}}/{{snakeCase resource}}')} />}
+                        />
+                        {!!

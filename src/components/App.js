@@ -39,10 +39,10 @@ export default class App extends Component {
 						  path="/posts"
 						  render={(props) => <LazyRoute {...props} component={import('./Subpage')} />}
 						/>
-						<Route 
+						<Route
 						  exact
 						  path="/posts/:id"
-						  render={(props) => <LazyRoute {...props} component={import('./Subitem')} />}
+						  render={(props) => <LazyRoute {...props} component={import('./SubItem')} />}
 						/>
 						<Route 
 						  exact
