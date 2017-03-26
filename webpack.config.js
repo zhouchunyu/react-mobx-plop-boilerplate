@@ -33,7 +33,8 @@ module.exports = {
                     ],
                     plugins: [
                         "transform-async-to-generator",
-                        "transform-decorators-legacy"
+                        "transform-decorators-legacy",
+                        ["import", { libraryName: "antd", style: "css" }] // `style: true` 会加载 less 文件
                     ]
                 }
             },
