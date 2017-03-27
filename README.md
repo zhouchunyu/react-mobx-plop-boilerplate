@@ -22,7 +22,7 @@ If you've downloaded this boilerplate before remember to run `npm install` again
 - [X] Data fetching example
 - [X] Protected Routes
 
-### Add plop //添加了plop生成rest风格表单
+### Add plop //添加了plop生成restful风格表单
 Usage
 
 plop resource
