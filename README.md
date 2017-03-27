@@ -23,11 +23,18 @@ If you've downloaded this boilerplate before remember to run `npm install` again
 - [X] Protected Routes
 
 ### Add plop //添加了plop生成rest风格表单
-`Usage
+Usage
+
 plop resource
+
 根据提示输入 comments
+
 id
+
 name
+
 body
+
 启动项目
-查看comments资源`
+
+查看comments资源
