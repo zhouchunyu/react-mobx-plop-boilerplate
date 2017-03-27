@@ -35,6 +35,6 @@ name
 
 body
 
-启动项目
+启动项目 npm start
 
-查看comments资源
+查看comments资源 localhost:3000/comments
