@@ -22,13 +22,12 @@ If you've downloaded this boilerplate before remember to run `npm install` again
 - [X] Data fetching example
 - [X] Protected Routes
 
-### Add plop //添加了plop生成restful风格表单
+### Add plop //添加了plop.js 用来生成rest风格表单，类似于rails的生成器
 Usage
 
 plop resource
 
 根据提示输入 comments
-
 id
 
 name
